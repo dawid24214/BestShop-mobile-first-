@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 /**
  * Path to exercise folder
  */
-const exercisePath = "";
+const exercisePath = "BestShop-mobile-first-\1_test js";
 
 /**
  * Don't change those lines below
