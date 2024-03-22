@@ -1,6 +1,14 @@
 $font-Raleway:Raleway Regular,sans-serif;
 $font-Open:Open Sans, Bold;
+$font-color-logo:#08A6E4;
+$font-color-h:#000000;
+$font-color-paragraf:#FFFFFF;
+$font-color-grey:#A5A5A5;
+$font-color-footer_1:#FB3B64;
+$font-color-footer_2:#07ACE6;
+$font-color-footer_3:#55DFB4;
 
+$allshadow:rgba(0px, -5px, 80px);
 @use 'sass:map';
 
 $size:(
@@ -14,7 +22,9 @@ P_1:11px,
         P_8:32px,
         P_9:36px,
         P_10:49px
+
 );
+
 
 // 32px --8
 // 11px -- 1 ok
