@@ -1,0 +1,29 @@
+$font-Raleway:Raleway Regular,sans-serif;
+$font-Open:Open Sans, Bold;
+
+@use 'sass:map';
+
+$size:(
+P_1:11px,
+        P_2:12px,
+        P_3:13px,
+        P_4:14px,
+        P_5:16px,
+        P_6:17px,
+        P_7:21px,
+        P_8:32px,
+        P_9:36px,
+        P_10:49px
+);
+
+// 32px --8
+// 11px -- 1 ok
+//49px-- 10
+//16px --5
+//36px --9
+//17px --6
+//14px --4
+//21px --7
+//12px --2 ok
+//13px --3
+
