@@ -1,41 +1,48 @@
-@import "../elements/header";
-@import "../generic/reset";
-@import "../elements/fonts";
-@import "../vendor/jquery.ui";
-@import "../elements/background-color";
-@import "../elements/mixin";
-@import "../elements/buttons";
-.opening{
+.opening {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &__content{
+  overflow: hidden;
+
+  &__content {
     margin-top: 130px;
     text-align: center;
-    @include xs{
+
+    @include mobile {
       margin-top: 100px;
     }
-
   }
-  &__header{
-font-family: $font-raleway;
+
+  &__header {
+    font-family: $font-raleway;
     font-size: 3.0625rem;
   }
-  &__heading{
+
+  &__heading {
     margin-top: 20px;
     margin-bottom: 38px;
-    @include xs{
+
+    @include mobile {
       padding: 0 70px;
     }
   }
-  &__image{
+
+  &__image {
     width: 100%;
     height: auto;
-    @include xs{
+
+    @include mobile {
       width: 220%;
       transform: translateX(-28%);
     }
   }
-}
 
+  @include mobile {
+    .btn {
+      margin: 0 15px;
+      padding: 16px 0;
+      display: block;
+    }
+  }
+}
 

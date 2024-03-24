@@ -1,11 +1,3 @@
-@import "../settings/all";
-@import "../generic/reset";
-@import "../elements/fonts";
-@import "../vendor/jquery.ui";
-@import "../elements/background-color";
-@import "../elements/mixin";
-@import "../elements/buttons";
-
 .header {
   height: 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
@@ -45,7 +37,7 @@
   &__nav {
     display: flex;
 
-    @include xs {
+    @include mobile {
       position: absolute;
       left: 0;
       top: 95px;
@@ -74,7 +66,7 @@
       left: -9999px;
       opacity: 0;
 
-      @include xs {
+      @include mobile {
         &:checked {
           ~ .header__nav {
             display: flex;
@@ -113,17 +105,9 @@
         }
       }
 
-      @include xs {
+      @include mobile {
         display: block;
       }
     }
   }
-}
-.logo{
-  font-family: Raleway, Light sans-serif;
- text-decoration: none;
-  font-size: 32px;
-  font-weight: 500;
-  margin: 25px;
-  color: $color-primary;
 }
