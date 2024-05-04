@@ -1,8 +1,0 @@
-$tablet: "(min-width: 420px) and (max-width: 420px)";
-body{
-  background-color: blue;
-  @media #{$tablet} {
-    background-color: yellow;
-
-  }
-}
