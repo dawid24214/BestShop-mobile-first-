@@ -1,0 +1,12 @@
+@use "sass:color";
+
+ $color: red;
+
+@for $i from 1 through 4 {
+ h#{$i} {
+  color: $color;
+}
+
+  $color:color.scale($color, $lightness:25%)
+}
+

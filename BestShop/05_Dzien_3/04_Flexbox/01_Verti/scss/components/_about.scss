@@ -1,0 +1,61 @@
+@use '../variables/colors';
+@use '../mixin/breakpoints';
+@use '../mixin/buttons';
+
+.about {
+  background-color: #fff;
+  padding: 30px 0;
+
+  .texts {
+    padding: 0 15px 30px!important;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #f1f1f1;
+
+    @include breakpoints.md {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      order: 2;
+    }
+
+    .title {
+      color: colors.$title-color;
+      margin-top: 0;
+    }
+
+    .btn {
+      @include buttons.btn;
+    }
+  }
+
+  .images {
+    h3 {
+      margin: 0 0 20px;
+    }
+
+    .gallery {
+      margin-bottom: 30px;
+      .col-6 {
+        &:nth-child(1) {
+          padding: 0 7px 7px 0!important;
+        }
+
+        &:nth-child(2) {
+          padding: 0 0 7px 7px!important;
+        }
+
+        &:nth-child(3) {
+          padding: 7px 7px 0 0!important;
+        }
+
+        &:nth-child(4) {
+          padding: 7px 0 0 7px!important;
+        }
+      }
+    }
+
+    .btn {
+      @include buttons.btn;
+    }
+  }
+}

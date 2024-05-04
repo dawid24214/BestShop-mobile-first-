@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "sass:list";
+
+$map:(
+min-width: 200px,
+        max-width:1000px,
+);
+
+$my-new-list: map.values($map);
+
+.menu{
+  width: list.nth($my-new-list, 1);
+}

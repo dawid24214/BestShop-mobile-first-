@@ -1,0 +1,40 @@
+
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+.my-form {
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  padding: 24px;
+
+  input, textarea, button {
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid #303030;
+  }
+
+  input, textarea {
+    @include placeholder(orange);
+  }
+}

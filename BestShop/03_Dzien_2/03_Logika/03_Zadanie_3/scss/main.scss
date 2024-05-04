@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+  $color: blue;
+
+  @if $i % 2 == 0 {
+    $color: orange;
+  }
+
+  .block_#{$i} {
+    background-color: $color;
+  }
+}
+
+[class^="block"] {
+  width: 100%;
+  height: 50px;
+}

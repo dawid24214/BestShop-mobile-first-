@@ -1,0 +1,14 @@
+$tablet: "(min-width: 400px) and (max-width: 800px)";
+$desktop: "(min-width: 801px)";
+
+body{
+  background-color: green;
+  @media #{$tablet} {
+    background-color: violet;
+
+  }
+  @media #{$desktop} {
+    background-color:orange ;
+
+  }
+}

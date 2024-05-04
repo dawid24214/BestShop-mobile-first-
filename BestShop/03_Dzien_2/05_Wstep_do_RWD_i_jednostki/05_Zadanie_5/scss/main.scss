@@ -1,0 +1,6 @@
+@use "sass:math";
+
+.footer-text{
+  border: 1rem solid #000;
+  width: math.div(240, 16)-2rem;
+}

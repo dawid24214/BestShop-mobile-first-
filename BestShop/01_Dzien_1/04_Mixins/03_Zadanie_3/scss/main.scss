@@ -1,0 +1,13 @@
+@mixin disabledHover() {
+  &[disabled]:hover {
+    @content;
+  }
+}
+
+
+button {
+  @include disabledHover {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}

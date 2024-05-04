@@ -1,0 +1,9 @@
+
+@use "sass:list";
+$my-list: 100px, 50px, 6px;
+
+@for $i from 1 through 3{
+  h#{$i} {
+    font-size: list.nth($my-list, $i) ;
+  }
+}

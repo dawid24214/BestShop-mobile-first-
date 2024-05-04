@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.exercise1 {
+  display: flex;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  flex-grow: 1;
+}
+
+.test1 {
+  background: #FF6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading1 {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 80px;
+      border: 2px solid rgba(255,255,255, .2);
+      border-radius: 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: animation1 .8s infinite ease-in-out alternate;
+    }
+  }
+
+  @keyframes animation1 {
+    50% {
+      height: 30px;
+    }
+
+    100% {
+      bottom: 84px - 30px;
+    }
+  }
+}
+
+
+
+.test2 {
+  background: #9370DB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading2 {
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgba(255,255,255, .2);
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 70px;
+      border: 5px solid transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top-color: #fff;
+      animation: animation2 1s infinite linear;
+    }
+  }
+
+  @keyframes animation2 {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+}
+
+.test3 {
+  background: #00FA9A;
+
+  .loading3 {
+    display: flex;
+    align-items: center;
+
+    span {
+      background-color: #fff;
+      border-radius: 3px;
+      width: 15px;
+      height: 20px;
+      display: block;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation: animation3 2s $i *0.5s infinite ease-in-out alternate;
+        }
+      }
+    }
+  }
+
+  @keyframes animation3 {
+    to {
+      height: 80px;
+    }
+  }
+}

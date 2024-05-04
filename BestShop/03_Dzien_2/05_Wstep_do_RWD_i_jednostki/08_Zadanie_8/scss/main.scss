@@ -1,0 +1,16 @@
+.test_height{
+  &_grandpa{
+    height: 50px;
+    border: 1px solid red;
+  }
+
+  &_daddy{
+    height: 200%;
+    border: 1px solid green;
+  }
+  &_baby{
+    height: 50%;
+    border: 1px solid blue;
+  }
+}
+

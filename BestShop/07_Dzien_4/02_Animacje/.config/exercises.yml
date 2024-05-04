@@ -1,0 +1,5 @@
+exercises:
+    1_Niedźwiadek: { max_points: 0, disabled: true }
+    2_Zadania: { max_points: 0, disabled: true }
+    3_Zombie: { max_points: 0, disabled: true }
+    4_Rakieta: { max_points: 0, disabled: true }

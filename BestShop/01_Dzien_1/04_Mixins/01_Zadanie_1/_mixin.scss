@@ -1,0 +1,9 @@
+@mixin headerFont($font-size) {
+  font-size: $font-size;
+  line-height: 2em;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #00FA9A;
+  }
+}

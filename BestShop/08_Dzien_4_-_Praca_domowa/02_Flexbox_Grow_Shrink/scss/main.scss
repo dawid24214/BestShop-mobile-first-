@@ -1,0 +1,52 @@
+
+@use 'sass:map';
+@use'sass:list';
+
+$size:(
+header: 150px,
+          footer:150px
+
+);
+
+
+$color-header: red;
+$color-main:blue;
+$color-footer:yellow;
+*{
+  box-sizing: border-box;
+}
+
+.flex-container-column{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100vh;
+  .header{
+    display: flex;
+    background-color:$color-header;
+    height: map.get($size, 'header');
+    padding: 0 15px;
+
+
+  }
+  .main{
+    background-color: $color-main;
+    flex: 1;
+    font-size: 30px;
+    font-weight: 500;
+
+  }
+  .footer{
+    display: flex;
+    background-color:$color-footer;
+    height: map.get($size, 'footer');
+    padding: 0 15px;
+
+  }
+}
+
+
+
+
